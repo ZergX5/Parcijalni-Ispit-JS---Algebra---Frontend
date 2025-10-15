@@ -1,7 +1,6 @@
 var input = document.getElementById("searchInput");
 var resultsDiv = document.getElementById("results");
 
-// Ova funkcija dohvaća podatke sa iTunes API-ja
 function search(term) {
   resultsDiv.innerHTML = "Učitavanje podataka...";
 
@@ -30,7 +29,6 @@ function search(term) {
     });
 }
 
-// Kad korisnik nešto upiše u input
 input.addEventListener("input", function() {
   var term = input.value.trim();
 
@@ -40,3 +38,4 @@ input.addEventListener("input", function() {
     search(term);
   }
 });
+
